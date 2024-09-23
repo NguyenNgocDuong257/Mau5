@@ -1,0 +1,167 @@
+﻿@{
+    Layout = "~/Views/Shared/_MasterLayout.cshtml";
+}
+<style type="text/css">
+ .menu{
+     background-color:black;
+     display:flex;
+     height:100px;
+ }
+    .menu ul {
+        list-style-type: none;
+        display: flex;
+        justify-content: center;
+    }
+    .menu ul li{
+        margin:15px;
+    }
+    .menu ul li a{
+        text-decoration:none;
+        color:white;
+        padding:30px;
+        font-size: 25px;
+    }
+    .banner {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-image: url(../Content/Images/anhnen.jpg);
+        background-size: cover;
+        background-position: center;
+        height:600px;
+    }
+    .bannercontent{
+        text-align:center;
+        color:orangered;
+    }
+    .bannercontent h3{
+        font-size:50px;
+        margin-bottom:20px;
+    }
+    .bannercontent a{
+        text-decoration:none;
+        color:white;
+    }
+    .btn{
+        display:inline-block;
+        padding:10px 35px;
+        background-color:black;
+        font-weight:bold;
+        font-size:30px;
+    }
+    .danhsachsp {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        gap:100px;
+    }
+    .sanpham h4{
+        font-size:25px;
+    }
+    .sanpham{
+        width:400px;
+    }
+    .sanpham img{
+       max-width:400px;
+      height:450px;
+    }
+    .newArrivals {     
+        text-align: center;  
+    }
+    .newArrivals h5{
+        font-size:30px;
+       
+    }
+    .ArrivalsContainer{
+        display:flex;
+        justify-content:center;
+        gap:10px;
+    }
+    .ArrivalsItems{
+        width:550px;
+    }
+    .ArrivalsItems img{
+        max-width:500px;
+    }
+    .ArrivalsItems h6{
+        align-items:center;
+        font-size:30px;
+    }
+        .ArrivalsItems p {
+            align-items: center;
+            font-size: 25px;
+            color:red;
+        }
+</style>
+<section  class="container">
+    <section class="menu">
+        <ul>
+            <li>
+                <a href="#">HOME</a>
+                <a href="#">COLLECTIONS</a>
+                <a href="#">SHOP</a>
+                <a href="#">LOOKBOOK</a>
+                <a href="#">BLOG</a>
+                <a href="#">FAQS</a>
+                <a href="#">ABOUT US</a>
+                <a href="#">CONTACT US</a>
+            </li>
+        </ul>
+    </section>
+    <section class="banner">
+        <div class="bannercontent">
+            <h3>Chào Mừng Bạn Đến Với YAME SHOP...</h3>
+            <a href="#" class="btn">Bắt Đầu Mua Sắm</a>
+        </div>
+    </section>
+    <section class="danhsachsp">
+        <div class="sanpham">
+            <h4>Quần áo</h4>
+            <img src="~/Content/Images/aoquan.jpg" />
+        </div>
+        <div class="sanpham">
+            <h4>Giày</h4>
+            <img src="~/Content/Images/giay.jpg" />
+        </div>
+        <div class="sanpham">
+            <h4>Phụ kiện</h4>
+            <img src="~/Content/Images/phukien.jpg" />
+        </div>
+    </section>
+    <section class="newArrivals">
+        <h5>--------------------------------------------------------------------------------------------------------------------------------------------------------------------------NEW ARRIVALS-------------------------------------------------------------------------------------------------------------------------------------------------------------------------</h5>
+        <div class="ArrivalsContainer">
+            <div class="ArrivalsItems">
+                <img src="~/Content/Images/aothunbalo.jpg" />
+                <h6>Áo thun ba lỗ <h6>
+                <p>150.000VNĐ</p>
+            
+            </div>
+            <div class="ArrivalsItems">
+                <img src="~/Content/Images/aodoubleface.jpg" />
+                <h6>Áo thun doubleface</h6>
+                <p>139.000VNĐ</p>
+               
+            </div>
+            <div class="ArrivalsItems">
+                <img src="~/Content/Images/aothunonepiece.jpg" />
+                <h6>Áo thun onepiece</h6>
+                <p>145.000VNĐ</p>
+               
+            </div>
+            <div class="ArrivalsItems">
+                <img src="~/Content/Images/aothunseventyseven.jpg" />
+                <h6>Áo thun seventyseven</h6>
+                <p>199.000VNĐ</p>
+               
+            </div>
+            <div class="ArrivalsItems">
+                <img src="~/Content/Images/aothunwaffle.jpg" />
+                <h6>Áo thun Compact 2S</h6>
+                <p>216.000VNĐ</p>
+              
+            </div>
+        </div>
+    </section>
+</section>
+

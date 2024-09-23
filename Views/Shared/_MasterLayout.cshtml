@@ -1,0 +1,101 @@
+﻿<style type="text/css">
+    html{
+        font-size:14px;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+    }
+    header{
+        border:2px solid #000000;
+        background-color:antiquewhite;
+        padding:5px;
+        display:flex;
+        justify-content: space-between;
+        align-items:center;
+    }
+    .hanhdong ul {
+        list-style-type: none;
+        display: flex;
+        justify-content: center;
+    }
+    .hanhdong ul li {
+            padding: 0 10px 0 0;
+            margin-left:25px;
+    }
+    .hanhdong ul li a{
+        text-decoration:none;
+        color:black;
+        font-size:25px;
+    }
+    .logo img{
+        height:120px;
+    }
+    .hanhdong h1{
+        font-size:40px;
+        align-content:center;
+    }
+    footer {
+        border: 2px solid #000000;
+        background-color: antiquewhite;
+        padding: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap:600px;
+    }
+    .contact ul{
+        font-size:30px;
+        font: arial;
+        font-weight:bold;
+    }
+        .contact ul li a{
+            text-decoration: none;
+        }
+    .socialmedia ul {
+        font-size: 30px;
+        font: arial;
+        font-weight: bold;
+    }
+    .socialmedia ul li a {
+        text-decoration: none;
+    }
+</style>
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+         <img src="~/Content/Images/yame-f-logo-white.png" />
+        </div>
+        <div class="hanhdong">
+            <h1>FREE SHIPPING ON ALL ORDERS. NO MINIMUM PURCHASE</h1>
+            <ul>
+                <li><a href="#">Shopping Cart</a></li>
+                <li><a href="#">My Wishlist</a></li>
+                <li><a href="#">Sign in or Create an account</a></li>
+            </ul>
+        </div>
+    </header>
+    
+    <div>
+        @RenderBody()
+    </div>
+    <footer>
+        <div class="contact">
+            <ul>
+                <li><a href="#">Hotline: 25072005</a></li>
+                <li><a href="#">Số điện thoại: 0972203954</a></li>
+            </ul>
+        </div>
+        <div class="socialmedia">
+            <ul>
+                <li><a href="#">Gmail: dwuong25072005@gmail.com</a></li>
+                <li><a href="#">Facebook: YAMESHOP</a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>
